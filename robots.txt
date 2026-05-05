@@ -1,0 +1,39 @@
+# Trimology robots.txt
+# This file tells search engines how to crawl and index the website
+
+# Default rules for all user agents
+User-agent: *
+Allow: /
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*.pdf
+Disallow: /*?*sessionid=*
+Disallow: /cgi-bin/
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://gainstrongerhealth.com/sitemap.xml
